@@ -1,6 +1,6 @@
 def ceasar():
   a = input("plain texst: ")
-  b = int(input("shift: "))
+  b = int(input("shift(can by -): "))
   c = ""
   for i in range(len(a)):
     d = ord(a[i])
@@ -9,5 +9,5 @@ def ceasar():
     if d>=122:
       d-=25
     c = c+(chr(d))
-  print(c)
+  return c
     
